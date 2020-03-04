@@ -26,3 +26,9 @@ nato_alphabet = {
   "y" => "yankee",
   "z" => "zulu",
 }
+
+def say_something(string)
+  string.chars
+end
+
+p say_something("hello")
