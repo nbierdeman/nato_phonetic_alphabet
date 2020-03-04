@@ -1,16 +1,16 @@
-nato_alphabet = {
+@nato_alphabet = {
   "a" => "alfa",
   "b" => "bravo",
   "c" => "charlie",
   "d" => "delta",
   "e" => "echo",
-  "f" => "foxtrot",
+  "f" => "fox trot",
   "g" => "golf",
   "h" => "hotel",
   "i" => "india",
-  "j" => "juliett",
+  "j" => "julie ett",
   "k" => "kilo",
-  "l" => "lima",
+  "l" => "leamuh",
   "m" => "mike",
   "n" => "november",
   "o" => "oscar",
@@ -28,7 +28,9 @@ nato_alphabet = {
 }
 
 def say_something(string)
-  string.chars
+  string.chars.each do |letter|
+    `say "#{@nato_alphabet[letter]}"`
+  end
 end
 
-p say_something("hello")
+say_something("hello world")
