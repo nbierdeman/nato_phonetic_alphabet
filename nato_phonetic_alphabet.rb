@@ -27,10 +27,11 @@
   "z" => "zulu",
 }
 
-def say_something(string)
-  string.chars.each do |letter|
+def say_something(word)
+  word.chars.each do |letter|
     `say "#{@nato_alphabet[letter]}"`
   end
 end
 
-say_something("hello world")
+puts "Please enter a word to get the NATO phonetic alphabet spelling:"
+say_something(gets.chomp.downcase)
